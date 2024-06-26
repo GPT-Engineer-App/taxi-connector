@@ -7,7 +7,6 @@ const CustomerSignup = () => {
         <Text fontSize="2xl">Customer Sign Up</Text>
         <Input placeholder="Name" size="lg" />
         <Input placeholder="Email" size="lg" />
-        <Input placeholder="Phone Number" size="lg" />
         <Input placeholder="Password" type="password" size="lg" />
         <Button colorScheme="blue" size="lg">Sign Up</Button>
       </VStack>

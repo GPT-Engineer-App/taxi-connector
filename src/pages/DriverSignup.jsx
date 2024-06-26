@@ -7,7 +7,6 @@ const DriverSignup = () => {
         <Text fontSize="2xl">Driver Sign Up</Text>
         <Input placeholder="Name" size="lg" />
         <Input placeholder="Email" size="lg" />
-        <Input placeholder="Phone Number" size="lg" />
         <Input placeholder="Password" type="password" size="lg" />
         <Button colorScheme="teal" size="lg">Sign Up</Button>
       </VStack>
