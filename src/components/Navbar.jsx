@@ -13,9 +13,6 @@ const Navbar = () => {
           <Button as={Link} to="/driver-login" variant={"solid"} colorScheme={"teal"} size={"sm"} mr={4}>
             Driver Login
           </Button>
-          <Button as={Link} to="/map-view" variant={"solid"} colorScheme={"green"} size={"sm"} mr={4}>
-            View Map
-          </Button>
           <Button as={Link} to="/customer-login" variant={"solid"} colorScheme={"blue"} size={"sm"}>
             Customer Login
           </Button>
