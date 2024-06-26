@@ -7,6 +7,7 @@ import CustomerLogin from "./pages/CustomerLogin.jsx";
 import DriverSignup from "./pages/DriverSignup.jsx";
 import CustomerSignup from "./pages/CustomerSignup.jsx";
 import Navbar from "./components/Navbar.jsx";
+import MapView from "./pages/MapView.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -31,6 +32,7 @@ function App() {
         <Route exact path="/customer-login" element={<CustomerLogin />} />
         <Route exact path="/driver-signup" element={<DriverSignup />} />
         <Route exact path="/customer-signup" element={<CustomerSignup />} />
+      <Route exact path="/map-view" element={<MapView />} />
       </Routes>
     </Router>
   );
