@@ -8,6 +8,7 @@ import DriverSignup from "./pages/DriverSignup.jsx";
 import CustomerSignup from "./pages/CustomerSignup.jsx";
 import Navbar from "./components/Navbar.jsx";
 import MapView from "./pages/MapView.jsx";
+import MainActivity from "./pages/MainActivity.jsx";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -32,7 +33,8 @@ function App() {
         <Route exact path="/customer-login" element={<CustomerLogin />} />
         <Route exact path="/driver-signup" element={<DriverSignup />} />
         <Route exact path="/customer-signup" element={<CustomerSignup />} />
-      <Route exact path="/map-view" element={<MapView />} />
+        <Route exact path="/map-view" element={<MapView />} />
+        <Route exact path="/main-activity" element={<MainActivity />} />
       </Routes>
     </Router>
   );
