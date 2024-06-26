@@ -1,4 +1,5 @@
-import { Container, Text, VStack, Button } from "@chakra-ui/react";
+import { Container, Text, VStack, Button, HStack } from "@chakra-ui/react";
+import { FaTaxi, FaUserPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Index = () => {
