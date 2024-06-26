@@ -1,4 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { useState, useEffect } from "react";
+import SplashScreen from "./components/SplashScreen.jsx";
 import Index from "./pages/Index.jsx";
 import DriverLogin from "./pages/DriverLogin.jsx";
 import CustomerLogin from "./pages/CustomerLogin.jsx";
@@ -7,6 +9,19 @@ import CustomerSignup from "./pages/CustomerSignup.jsx";
 import Navbar from "./components/Navbar.jsx";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); // Display splash screen for 3 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <SplashScreen />;
+  }
   return (
     <Router>
       <Navbar />
